@@ -15,3 +15,4 @@ print(result.usage)
 print(result.cost)
 print(result.model)
 
+load
