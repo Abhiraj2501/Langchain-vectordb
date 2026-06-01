@@ -3,4 +3,4 @@ from dotenv import load_dotenv
 
 
 load_dotenv()
-llm = OpenAI()
+llm = OpenAI(model=)
