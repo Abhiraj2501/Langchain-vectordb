@@ -1,2 +1,2 @@
 import langchain 
-print()
+print(langchain.__version__)
