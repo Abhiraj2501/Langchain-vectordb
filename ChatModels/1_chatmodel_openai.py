@@ -11,4 +11,5 @@ result = model.invoke("Define LCM meta research")
 print(result.content)
 print(result.metadata)
 print(result.tokens)
-p
+print(result.usage)
+print(result.cost)
