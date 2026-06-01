@@ -19,3 +19,4 @@ model2 = ChatOpenAI(model='gpt-3.5-turbo', temperature=0.5, max_completion_token
 result2 = model2.invoke("What is the capital of France?")   
 print(result2.content)
 print(result2.metadata)
+print(result2.tokens)
