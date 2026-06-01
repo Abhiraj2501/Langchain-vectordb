@@ -1,1 +1,1 @@
-from langchain_openai
+from langchain_openai import OpenAI
