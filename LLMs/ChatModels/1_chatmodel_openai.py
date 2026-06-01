@@ -1,1 +1,1 @@
-import langchain_openai import chat
+import langchain_openai import chat_openai
