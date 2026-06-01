@@ -13,4 +13,5 @@ print(result.metadata)
 print(result.tokens)
 print(result.usage)
 print(result.cost)
-print(result.model) 
+print(result.model)
+
