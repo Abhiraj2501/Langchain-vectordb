@@ -15,4 +15,5 @@ print(result.usage)
 print(result.cost)
 print(result.model)
 
-load
+model2 = ChatOpenAI(model='gpt-3.5-turbo', temperature=0.5, max_completion_tokens=20)
+result2 = model2.invoke("What is the capital of France?")
