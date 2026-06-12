@@ -23,3 +23,4 @@ print(result2.tokens)
 print(result2.usage)
 print(result2.cost)
 print(result2.model)
+p
