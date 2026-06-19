@@ -43,3 +43,5 @@ def test_chat_model():
     assert result2.tokens is not None
     assert result2.usage is not None
     assert result2.cost is not None
+    assert result2.model == 'gpt-3.5-turbo'
+    assert model2.model == 'gpt-3.5-turbo'
