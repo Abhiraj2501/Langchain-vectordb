@@ -48,4 +48,3 @@ def test_chat_model():
     assert model2.temperature == 0.5
     assert model2.max_completion_tokens == 20
     assert model2.invoke("What is the capital of France?").content == "The capital of France is Paris."
-    
