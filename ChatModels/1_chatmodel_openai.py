@@ -36,4 +36,10 @@ def test_chat_model():
     assert result.usage is not None
     assert result.cost is not None
     assert result.model == 'gpt-4'
-    
+    model2 = ChatOpenAI(model='gpt-3.5-turbo', temperature=0.5, max_completion_tokens=20)
+    result2 = model2.invoke("What is the capital of France?")
+    assert result2.content is not None
+    assert result2.metadata is not None
+    assert result2.tokens is not None
+    assert result2.usage is not None
+    assert result2.cost is not None
