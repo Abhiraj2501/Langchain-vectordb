@@ -27,3 +27,12 @@ print(model2.model)
 print(model2.temperature)
 print(model2.max_completion_tokens)
 print(model2.invoke("What is the capital of France?").content)
+def test_chat_model():
+    model = ChatOpenAI(model='gpt-4', temperature=1.5, max_completion_tokens=10)
+    result = model.invoke("Define LCM meta research")
+    assert result.content is not None
+    assert result.metadata is not None
+    assert result.tokens is not None
+    assert result.usage is not None
+    assert result.cost is not None
+    assert result.model == 'gpt-4'
