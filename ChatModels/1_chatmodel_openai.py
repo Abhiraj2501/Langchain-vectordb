@@ -36,3 +36,4 @@ def test_chat_model():
     assert result.usage is not None
     assert result.cost is not None
     assert result.model == 'gpt-4'
+    
