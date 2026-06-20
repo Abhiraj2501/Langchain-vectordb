@@ -56,4 +56,9 @@ def test_chat_model_invalid_model():
     except Exception as e:
         assert str(e) == "Model 'invalid-model' is not supported."
 
-    
+def test_chat_model_invalid_temperature():
+    try:
+        model = ChatOpenAI(model='gpt-4', temperature=-1.0, max_completion_tokens=10)
+        model.invoke("Define LCM meta research")
+    except Exception as e:
+        assert str(e) == "Temperature must be between 0 and 2."
