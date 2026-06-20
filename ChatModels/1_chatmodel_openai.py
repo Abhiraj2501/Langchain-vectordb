@@ -49,4 +49,11 @@ def test_chat_model():
     assert model2.max_completion_tokens == 20
     assert model2.invoke("What is the capital of France?").content == "The capital of France is Paris."
 
-def 
+def test_chat_model_invalid_model():
+    try:
+        model = ChatOpenAI(model='invalid-model', temperature=1.5, max_completion_tokens=10)
+        model.invoke("Define LCM meta research")
+    except Exception as e:
+        assert str(e) == "Model 'invalid-model' is not supported."
+
+    
