@@ -62,4 +62,9 @@ def test_chat_model_invalid_temperature():
         model.invoke("Define LCM meta research")
     except Exception as e:
         assert str(e) == "Temperature must be between 0 and 2."
-        
+def test_chat_model_invalid_max_completion_tokens():
+    try:
+        model = ChatOpenAI(model='gpt-4', temperature=1.5, max_completion_tokens=-10)
+        model.invoke("Define LCM meta research")
+    except Exception as e:
+        assert str(e) == "Max completion tokens must be a positive integer."
