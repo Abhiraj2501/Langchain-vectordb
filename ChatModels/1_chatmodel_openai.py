@@ -62,3 +62,4 @@ def test_chat_model_invalid_temperature():
         model.invoke("Define LCM meta research")
     except Exception as e:
         assert str(e) == "Temperature must be between 0 and 2."
+        
