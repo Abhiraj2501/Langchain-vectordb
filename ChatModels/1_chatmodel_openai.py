@@ -79,3 +79,13 @@ def test_chat_model_empty_prompt():
     assert result.cost is not None
     assert result.model == 'gpt-4'
 def test_chat_model_long_prompt():
+    model = ChatOpenAI(model='gpt-4', temperature=1.5, max_completion_tokens=10)
+    long_prompt = "Define LCM meta research. " * 100
+    result = model.invoke(long_prompt)
+    assert result.content is not None
+    assert result.metadata is not None
+    assert result.tokens is not None
+    assert result.usage is not None
+    assert result.cost is not None
+    assert result.model == 'gpt-4'
+
