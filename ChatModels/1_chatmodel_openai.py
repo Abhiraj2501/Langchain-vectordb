@@ -68,3 +68,4 @@ def test_chat_model_invalid_max_completion_tokens():
         model.invoke("Define LCM meta research")
     except Exception as e:
         assert str(e) == "Max completion tokens must be a positive integer."
+        
