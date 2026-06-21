@@ -70,4 +70,12 @@ def test_chat_model_invalid_max_completion_tokens():
         assert str(e) == "Max completion tokens must be a positive integer."
 
 def test_chat_model_empty_prompt():
-    
+    model = ChatOpenAI(model='gpt-4', temperature=1.5, max_completion_tokens=10)
+    result = model.invoke("")
+    assert result.content is not None
+    assert result.metadata is not None
+    assert result.tokens is not None
+    assert result.usage is not None
+    assert result.cost is not None
+    assert result.model == 'gpt-4'
+def test_chat_model_long_prompt():
