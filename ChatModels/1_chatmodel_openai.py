@@ -69,4 +69,5 @@ def test_chat_model_invalid_max_completion_tokens():
     except Exception as e:
         assert str(e) == "Max completion tokens must be a positive integer."
 
-cha
+def test_chat_model_empty_prompt():
+    
