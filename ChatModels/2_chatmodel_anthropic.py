@@ -10,3 +10,5 @@ result = model.invoke('What is the capital of India')
 
 print(result.content)
 
+def test_chat_model_anthropic():
+    
