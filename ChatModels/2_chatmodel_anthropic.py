@@ -22,3 +22,10 @@ def test_chat_model_anthropic():
 test_chat_model_anthropic()
 
 def test_chat_model_anthropic_invalid_model():
+    try:
+        model = ChatAnthropic(model='invalid-model')
+        model.invoke('What is the capital of India')
+    except Exception as e:
+        assert str(e) == "Model 'invalid-model' is not supported."
+
+
