@@ -19,4 +19,6 @@ def test_chat_model_anthropic():
     assert result.usage is not None
     assert result.cost is not None
     assert result.model == 'claude-3-5-sonnet-20241022'
-    
+test_chat_model_anthropic()
+
+def test_chat_model_anthropic_invalid_model():
