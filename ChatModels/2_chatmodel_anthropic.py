@@ -28,4 +28,4 @@ def test_chat_model_anthropic_invalid_model():
     except Exception as e:
         assert str(e) == "Model 'invalid-model' is not supported."
 
-
+test_chat_model_anthropic_invalid_model()
