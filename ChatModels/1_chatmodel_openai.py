@@ -99,3 +99,5 @@ def test_chat_model_special_characters_prompt():
     assert result.usage is not None
     assert result.cost is not None
     assert result.model == 'gpt-4'
+
+def test_chat_model_multilingual_prompt():
