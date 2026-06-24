@@ -89,3 +89,13 @@ def test_chat_model_long_prompt():
     assert result.cost is not None
     assert result.model == 'gpt-4'
 
+def test_chat_model_special_characters_prompt():
+    model = ChatOpenAI(model='gpt-4', temperature=1.5, max_completion_tokens=10)
+    special_characters_prompt = "!@#$%^&*()_+-=[]{}|;':\",./<>?"
+    result = model.invoke(special_characters_prompt)
+    assert result.content is not None
+    assert result.metadata is not None
+    assert result.tokens is not None
+    assert result.usage is not None
+    assert result.cost is not None
+    assert result.model == 'gpt-4'
