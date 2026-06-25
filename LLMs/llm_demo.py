@@ -22,3 +22,4 @@ def test_llm():
 
 test_llm()
 
+def test_llm_with_custom_model():
