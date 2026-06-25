@@ -20,4 +20,5 @@ def test_llm():
     assert result.cost is not None
     assert result.model == "gpt-3.5-turbo-instruct"
 
-te
+test_llm()
+
