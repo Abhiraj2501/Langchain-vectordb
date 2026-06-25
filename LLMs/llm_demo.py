@@ -52,4 +52,4 @@ class TestLLM:
         assert result.cost is not None
         assert result.model == "gpt-4o"
 
-obj
+obj = TestLLM()
