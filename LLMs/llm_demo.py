@@ -31,4 +31,4 @@ def test_llm_with_custom_model():
     assert result.usage is not None
     assert result.cost is not None
     assert result.model == "gpt-4o"
-class
+class Test
