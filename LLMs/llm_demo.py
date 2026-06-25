@@ -23,3 +23,11 @@ def test_llm():
 test_llm()
 
 def test_llm_with_custom_model():
+    llm = OpenAI(model="gpt-4o")
+    result = llm.invoke("what is the use of langchain?")
+    assert result.content is not None
+    assert result.metadata is not None
+    assert result.tokens is not None
+    assert result.usage is not None
+    assert result.cost is not None
+    assert result.model == "gpt-4o"
