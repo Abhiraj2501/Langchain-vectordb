@@ -57,3 +57,7 @@ obj.test_llm()
 
 count = 0
 for i in range(10):
+    obj.test_llm_with_custom_model()
+    count += 1
+    print(f"Test {count} completed successfully.")
+
