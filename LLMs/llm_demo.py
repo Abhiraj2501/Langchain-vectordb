@@ -55,4 +55,5 @@ class TestLLM:
 obj = TestLLM()
 obj.test_llm()
 
-count 
+count = 0
+for i in range(10):
