@@ -61,3 +61,4 @@ for i in range(10):
     count += 1
     print(f"Test {count} completed successfully.")
 
+print("All tests completed successfully.")
