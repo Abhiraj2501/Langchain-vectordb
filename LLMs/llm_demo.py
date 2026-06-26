@@ -53,3 +53,5 @@ class TestLLM:
         assert result.model == "gpt-4o"
 
 obj = TestLLM()
+obj.test_llm()
+
