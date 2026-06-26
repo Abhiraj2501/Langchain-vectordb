@@ -62,3 +62,5 @@ for i in range(10):
     print(f"Test {count} completed successfully.")
 
 print("All tests completed successfully.")
+if __name__ == "__main__":
+    
