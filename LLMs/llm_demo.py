@@ -63,4 +63,9 @@ for i in range(10):
 
 print("All tests completed successfully.")
 if __name__ == "__main__":
-    
+    test_llm()
+    test_llm_with_custom_model()
+    obj.test_llm()
+    obj.test_llm_with_custom_model()
+    print("All tests completed successfully.")
+
