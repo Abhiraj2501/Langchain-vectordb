@@ -11,3 +11,12 @@ def test_llm():
     assert result.cost is not None
     assert result.model == "gpt-3.5-turbo-instruct"
 def test_llm_with_custom_model():
+    llm = OpenAI(model="gpt-4o")
+    result = llm.invoke("what is the use of langchain?")
+    assert result.content is not None
+    assert result.metadata is not None
+    assert result.tokens is not None
+    assert result.usage is not None
+    assert result.cost is not None
+    assert result.model == "gpt-4o"
+
