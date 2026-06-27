@@ -20,3 +20,4 @@ def test_llm_with_custom_model():
     assert result.cost is not None
     assert result.model == "gpt-4o"
 
+test_llm()
