@@ -23,3 +23,4 @@ def test_llm_with_custom_model():
 test_llm()
 test_llm_with_custom_model()
 
+random_string = "This is a random string for testing purposes."
