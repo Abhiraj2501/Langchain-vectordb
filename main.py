@@ -21,3 +21,5 @@ def test_llm_with_custom_model():
     assert result.model == "gpt-4o"
 
 test_llm()
+test_llm_with_custom_model()
+
