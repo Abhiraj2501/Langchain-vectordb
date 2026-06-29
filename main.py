@@ -35,3 +35,5 @@ accuracy = 0.95
 def calculate_accuracy(predictions, ground_truth):
     correct_predictions = sum(p == gt for p, gt in zip(predictions, ground_truth))
     return correct_predictions / len(ground_truth) if ground_truth else 0.0
+
+cal
