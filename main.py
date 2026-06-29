@@ -27,3 +27,5 @@ random_string = "This is a random string for testing purposes."
 new_string = random_string.replace("random", "sample")
 
 test_llm()
+
+random_string = "This is a random string for testing purposes."
