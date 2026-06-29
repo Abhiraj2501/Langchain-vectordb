@@ -32,4 +32,4 @@ random_string = "This is a random string for testing purposes."
 check_string = random_string.replace("random", "sample")
 
 accuracy = 0.95
-cal
+def cal
