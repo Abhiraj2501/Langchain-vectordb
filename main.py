@@ -38,4 +38,4 @@ def calculate_accuracy(predictions, ground_truth):
 
 calculate_accuracy([1, 0, 1, 1], [1, 0, 0, 1])
 
-sexo
+second_string = "This is another string for testing."
