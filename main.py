@@ -39,3 +39,4 @@ def calculate_accuracy(predictions, ground_truth):
 calculate_accuracy([1, 0, 1, 1], [1, 0, 0, 1])
 
 second_string = "This is another string for testing."
+check_second_string = second_string.replace("another", "different")
