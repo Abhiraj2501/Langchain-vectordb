@@ -45,3 +45,4 @@ calculate_accuracy([1, 1, 0, 1], [1, 1, 1, 1])
 new_accuracy = calculate_accuracy([1, 0, 1, 1], [1, 0, 0, 1])
 
 r2 = 0.85
+def cal
