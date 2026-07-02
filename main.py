@@ -45,4 +45,9 @@ calculate_accuracy([1, 1, 0, 1], [1, 1, 1, 1])
 new_accuracy = calculate_accuracy([1, 0, 1, 1], [1, 0, 0, 1])
 
 r2 = 0.85
-def cal
+def calculate_r2(predictions, ground_truth):
+    mean_gt = sum(ground_truth) / len(ground_truth) if ground_truth else 0.0
+    ss_total = sum((gt - mean_gt) ** 2 for gt in ground_truth)
+    ss_residual = sum((gt - p) ** 2 for p, gt in zip(predictions, ground_truth))
+    return 1 - (ss_residual / ss_total) if ss_total != 0 else 0.0
+
