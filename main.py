@@ -50,4 +50,4 @@ def calculate_r2(predictions, ground_truth):
     ss_total = sum((gt - mean_gt) ** 2 for gt in ground_truth)
     ss_residual = sum((gt - p) ** 2 for p, gt in zip(predictions, ground_truth))
     return 1 - (ss_residual / ss_total) if ss_total != 0 else 0.0
-
+def test_r2():
