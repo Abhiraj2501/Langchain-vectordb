@@ -63,3 +63,5 @@ def test_r2_with_custom_data():
     r2_value = calculate_r2(predictions, ground_truth)
     assert r2_value == 1.0
     print(f"R² value with custom data: {r2_value}")
+
+def 
