@@ -64,4 +64,9 @@ def test_r2_with_custom_data():
     assert r2_value == 1.0
     print(f"R² value with custom data: {r2_value}")
 
-def 
+def test_r2_with_edge_case():
+    predictions = [1, 1, 1, 1]
+    ground_truth = [1, 1, 1, 1]
+    r2_value = calculate_r2(predictions, ground_truth)
+    assert r2_value == 1.0
+    print(f"R² value with edge case: {r2_value}")
